@@ -1,6 +1,6 @@
 {
   "name": "@stdlib/array-base-from-strided",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "description": "Convert a strided array to a non-strided generic array.",
   "license": "Apache-2.0",
   "author": {
