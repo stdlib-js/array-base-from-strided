@@ -48,7 +48,7 @@ limitations under the License.
 ## Usage
 
 ```javascript
-import strided2array from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-base-from-strided@deno/mod.js';
+import strided2array from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-base-from-strided@v0.2.0-deno/mod.js';
 ```
 
 #### strided2array( N, x, stride, offset )
@@ -91,7 +91,7 @@ The function accepts the following arguments:
 
 ```javascript
 import zeroTo from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-base-zero-to@deno/mod.js';
-import strided2array from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-base-from-strided@deno/mod.js';
+import strided2array from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-base-from-strided@v0.2.0-deno/mod.js';
 
 var x = zeroTo( 10 );
 console.log( x );
