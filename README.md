@@ -48,6 +48,11 @@ limitations under the License.
 ## Usage
 
 ```javascript
+import strided2array from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-base-from-strided@deno/mod.js';
+```
+The previous example will load the latest bundled code from the deno branch. Alternatively, you may load a specific version by loading the file from one of the [tagged bundles](https://github.com/stdlib-js/array-base-from-strided/tags). For example,
+
+```javascript
 import strided2array from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-base-from-strided@v0.2.2-deno/mod.js';
 ```
 
@@ -91,7 +96,7 @@ The function accepts the following arguments:
 
 ```javascript
 import zeroTo from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-base-zero-to@deno/mod.js';
-import strided2array from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-base-from-strided@v0.2.2-deno/mod.js';
+import strided2array from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-base-from-strided@deno/mod.js';
 
 var x = zeroTo( 10 );
 console.log( x );
