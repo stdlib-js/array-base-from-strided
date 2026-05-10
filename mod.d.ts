@@ -1,4 +1,4 @@
-/**
+/*
 * @license Apache-2.0
 *
 * Copyright (c) 2023 The Stdlib Authors.
@@ -16,27 +16,34 @@
 * limitations under the License.
 */
 
-'use strict';
+// TypeScript Version: 4.1
+
+/// <reference types="https://cdn.jsdelivr.net/gh/stdlib-js/types@main/index.d.ts"/>
+
+import { Collection } from '@stdlib/types/array';
 
 /**
-* Convert a strided array to a non-strided generic array.
+* Converts a strided array to a non-strided generic array.
 *
-* @module @stdlib/array-base-from-strided
+* ## Notes
+*
+* -   The function assumes that the input array is compatible with the specified number of elements, index stride, and index offset.
+*
+* @param N - number of indexed elements
+* @param x - input array
+* @param stride - index stride
+* @param offset - index of the first indexed value in the input array
+* @returns two-dimensional nested array
 *
 * @example
-* var strided2array = require( '@stdlib/array-base-from-strided' );
-*
 * var x = [ 1, 2, 3, 4, 5, 6 ];
 *
 * var arr = strided2array( 3, x, 2, 0 );
 * // returns [ 1, 3, 5 ]
 */
-
-// MODULES //
-
-var main = require( './main.js' );
+declare function strided2array<T = unknown, U = T>( N: number, x: Collection<T>, stride: number, offset: number ): Array<U>;
 
 
 // EXPORTS //
 
-module.exports = main;
+export = strided2array;
